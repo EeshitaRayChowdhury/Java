@@ -1,0 +1,24 @@
+/*  Scanner class helps to read input from stdin and write output to stdout. We can specify the input stream through System.in. For example:
+Scanner scanner = new Scanner(System.in);
+String myString = scanner.next();
+int myInt = scanner.nextInt();
+scanner.close();
+*/
+
+
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in); // Scanning a new input from stdin
+        while(scan.hasNext()){
+            int a = scan.nextInt();
+            System.out.println(a);
+        }
+        
+        scan.close(); // closing scanner object.
+       
+    }
+}
