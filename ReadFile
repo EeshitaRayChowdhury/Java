@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution { //Both the loops work... I have written it just for an example.
+
+    public static void main(String[] args) { 
+        Scanner x = new Scanner(System.in);
+         /*for(int i=1; x.hasNext()==true; i++)
+         {
+             
+        System.out.println(i +  " " + x.nextLine());
+         }*/
+        
+        int i=0;
+        while(x.hasNext())
+        {
+        i++;
+        System.out.println(i + " " + x.nextLine());
+        //System.out.println(i + x);
+        //System.out.println(i + x);
+        }
+        
+      
+    }
+}
