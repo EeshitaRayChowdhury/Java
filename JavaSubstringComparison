@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = "";
+        String largest = "";
+         java.util.List<String> a = new java.util.ArrayList<>(); // Craeting an array object
+
+        for(int i=0;i<s.length()-k+1;i++){ // Here using stringLength - k  + 1 because we need to loop only till the last index of the start of the substring. In this case it is 14-3+1 which is 11. 
+            
+                a.add(s.substring(i,i+k));   // This will print the substring starting from the index 0 to end index 3 -1. In string, substring works in this way. Start index is included and endindex is excluded.
+                
+        }
+        java.util.Collections.sort(a); // Sorts in the ascending order. In this case it will sort the array in ascending lexical order.
+         smallest = a.get(0);
+         largest = a.get(a.size()-1);
+        return smallest + "\n" + largest;
+    }
