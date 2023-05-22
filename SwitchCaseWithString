@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Scratch {
+    public static void main(String[] args) {
+
+        Scanner str2  = new Scanner(System.in);
+        String s = str2.nextLine();
+        switch(s)
+        {
+            case "Mango":
+                System.out.println("Waah");
+                
+            case "Apple":
+                System.out.println("Waah waah");
+
+        }
+    }
+}
