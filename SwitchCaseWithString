@@ -8,10 +8,10 @@ class Scratch {
         switch(s)
         {
             case "Mango":
-                System.out.println("Waah");
+                System.out.println("Good");
                 
             case "Apple":
-                System.out.println("Waah waah");
+                System.out.println("Better");
 
         }
     }
