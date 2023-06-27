@@ -1,0 +1,35 @@
+import java.util.HashMap;
+
+class RomanNumber {
+    public static void main(String[] args) {
+
+        String s = "IVI";
+        HashMap<Character,Integer> m = new HashMap<Character,Integer>();
+        m.put('I',1);
+        m.put('V',5);
+        m.put('X',10);
+        m.put('L',50);
+        m.put('C',100);
+        m.put('D',500);
+        m.put('M',1000);
+
+       // System.out.println(m);
+
+        int ans = 0;
+
+       for(int i=0;i<s.length()-1;i++)
+        {
+           //System.out.println(m.get(s.charAt(i+1)));
+          if(m.get(s.charAt(i)) < m.get(s.charAt(i+1)) && i < s.length())
+            {
+                ans = ans + m.get(s.charAt(i));
+
+            }
+          else
+          {
+              ans = m.get(s.charAt(i)) + ans;
+          }
+        }
+        System.out.println(ans);
+    }
+}
